@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Framework\Animation\Animator.h" />
+    <ClInclude Include="Source\Framework\Animation\Easing.h" />
+    <ClInclude Include="Source\Framework\Audio\Audio.h" />
+    <ClInclude Include="Source\Framework\Core\Drawable.h" />
+    <ClInclude Include="Source\Framework\Core\Transformable.h" />
+    <ClInclude Include="Source\Framework\Debug\Log.h" />
+    <ClInclude Include="Source\Framework\Debug\Profile.h" />
+    <ClInclude Include="Source\Framework\Events\Event.h" />
+    <ClInclude Include="Source\Framework\Events\EventDispatcher.h" />
+    <ClInclude Include="Source\Framework\Events\EventHandler.h" />
+    <ClInclude Include="Source\Framework\Events\FullscreenEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadButtonDownEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadButtonUpEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadConnectedEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadDisconnectedEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadLeftThumbStickEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadLeftTriggerEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadRightThumbStickEvent.h" />
+    <ClInclude Include="Source\Framework\Events\GamePadRightTriggerEvent.h" />
+    <ClInclude Include="Source\Framework\Events\KeyDownEvent.h" />
+    <ClInclude Include="Source\Framework\Events\KeyRepeatEvent.h" />
+    <ClInclude Include="Source\Framework\Events\KeyUpEvent.h" />
+    <ClInclude Include="Source\Framework\Events\MouseButtonDownEvent.h" />
+    <ClInclude Include="Source\Framework\Events\MouseButtonUpEvent.h" />
+    <ClInclude Include="Source\Framework\Events\MouseMovementEvent.h" />
+    <ClInclude Include="Source\Framework\Events\MouseScrollWheelEvent.h" />
+    <ClInclude Include="Source\Framework\Events\ResizeEvent.h" />
+    <ClInclude Include="Source\Framework\Events\UpdateEvent.h" />
+    <ClInclude Include="Source\Framework\GameDev2D.h" />
+    <ClInclude Include="Source\Framework\Graphics\AnimatedSprite.h" />
+    <ClInclude Include="Source\Framework\Graphics\Camera.h" />
+    <ClInclude Include="Source\Framework\Graphics\Color.h" />
+    <ClInclude Include="Source\Framework\Graphics\Font.h" />
+    <ClInclude Include="Source\Framework\Graphics\GraphicTypes.h" />
+    <ClInclude Include="Source\Framework\Graphics\Label.h" />
+    <ClInclude Include="Source\Framework\Graphics\Polygon.h" />
+    <ClInclude Include="Source\Framework\Graphics\RenderTarget.h" />
+    <ClInclude Include="Source\Framework\Graphics\Shader.h" />
+    <ClInclude Include="Source\Framework\Graphics\Sprite.h" />
+    <ClInclude Include="Source\Framework\Graphics\SpriteAtlas.h" />
+    <ClInclude Include="Source\Framework\Graphics\SpriteBatch.h" />
+    <ClInclude Include="Source\Framework\Graphics\Texture.h" />
+    <ClInclude Include="Source\Framework\Graphics\VertexData.h" />
+    <ClInclude Include="Source\Framework\Input\GamePad.h" />
+    <ClInclude Include="Source\Framework\Input\Keyboard.h" />
+    <ClInclude Include="Source\Framework\Input\Mouse.h" />
+    <ClInclude Include="Source\Framework\IO\File.h" />
+    <ClInclude Include="Source\Framework\Math\Math.h" />
+    <ClInclude Include="Source\Framework\Math\Matrix.h" />
+    <ClInclude Include="Source\Framework\Math\Rotation.h" />
+    <ClInclude Include="Source\Framework\Math\Vector2.h" />
+    <ClInclude Include="Source\Framework\Services\DebugUI\DebugUI.h" />
+    <ClInclude Include="Source\Framework\Services\Graphics\Graphics.h" />
+    <ClInclude Include="Source\Framework\Services\InputManager\InputManager.h" />
+    <ClInclude Include="Source\Framework\Services\ResourceManager\ResourceManager.h" />
+    <ClInclude Include="Source\Framework\Services\Services.h" />
+    <ClInclude Include="Source\Framework\Utils\Png\Png.h" />
+    <ClInclude Include="Source\Framework\Utils\Text\Text.h" />
+    <ClInclude Include="Source\Framework\Utils\TrueType\TrueType.h" />
+    <ClInclude Include="Source\Framework\Windows\Application.h" />
+    <ClInclude Include="Source\Framework\Windows\GameLoop.h" />
+    <ClInclude Include="Source\Framework\Windows\GameWindow.h" />
+    <ClInclude Include="Source\Framework\Windows\OpenGL\glext.h" />
+    <ClInclude Include="Source\Framework\Windows\OpenGL\OpenGLExtensions.h" />
+    <ClInclude Include="Source\Framework\Windows\OpenGL\wglext.h" />
+    <ClInclude Include="Source\Framework\Windows\resource.h" />
+    <ClInclude Include="Source\Framework\Windows\stdafx.h" />
+    <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod.hpp" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmodiphone.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_codec.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_dsp.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_errors.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_memoryinfo.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_output.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\config\ftconfig.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\config\ftheader.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\config\ftmodule.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\config\ftoption.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\config\ftstdlib.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\freetype.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftadvanc.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftautoh.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftbbox.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftbdf.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftbitmap.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftbzip2.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftcache.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftcffdrv.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftchapters.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftcid.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\fterrdef.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\fterrors.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftgasp.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftglyph.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftgxval.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftgzip.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftimage.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftincrem.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftlcdfil.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftlist.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftlzw.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftmac.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftmm.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftmodapi.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftmoderr.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftotval.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftoutln.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftpfr.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftrender.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftsizes.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftsnames.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftstroke.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftsynth.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftsystem.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\fttrigon.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftttdrv.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\fttypes.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftwinfnt.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ftxf86.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\autohint.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftcalc.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftdebug.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftdriver.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftgloadr.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftmemory.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftobjs.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftpic.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftrfork.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftserv.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftstream.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\fttrace.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\ftvalid.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\internal.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\psaux.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\pshints.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svbdf.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svcid.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svgldict.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svgxval.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svkern.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svmm.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svotval.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svpfr.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svpostnm.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svprop.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svpscmap.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svpsinfo.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svsfnt.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svttcmap.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svtteng.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svttglyf.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svwinfnt.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\services\svxf86nm.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\sfnt.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\t1types.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\internal\tttypes.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\t1tables.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ttnameid.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\tttables.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\tttags.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\freetype2\ttunpat.h" />
+    <ClInclude Include="Source\Libraries\freetype\include\ft2build.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\autolink.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\config.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\features.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\forwards.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\json.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\json_batchallocator.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\reader.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\value.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\writer.h" />
+    <ClInclude Include="Source\Libraries\lodepng\lodepng.h" />
+    <ClInclude Include="Source\Segment.h" />
+    <ClInclude Include="Source\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Framework\Animation\Animator.cpp" />
+    <ClCompile Include="Source\Framework\Animation\Easing.cpp" />
+    <ClCompile Include="Source\Framework\Audio\Audio.cpp" />
+    <ClCompile Include="Source\Framework\Core\Drawable.cpp" />
+    <ClCompile Include="Source\Framework\Core\Transformable.cpp" />
+    <ClCompile Include="Source\Framework\Debug\Log.cpp" />
+    <ClCompile Include="Source\Framework\Debug\Profile.cpp" />
+    <ClCompile Include="Source\Framework\Events\Event.cpp" />
+    <ClCompile Include="Source\Framework\Events\EventDispatcher.cpp" />
+    <ClCompile Include="Source\Framework\Events\EventHandler.cpp" />
+    <ClCompile Include="Source\Framework\Events\FullscreenEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadButtonDownEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadButtonUpEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadConnectedEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadDisconnectedEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadLeftThumbStickEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadLeftTriggerEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadRightThumbStickEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\GamePadRightTriggerEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\KeyDownEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\KeyRepeatEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\KeyUpEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\MouseButtonDownEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\MouseButtonUpEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\MouseMovementEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\MouseScrollWheelEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\ResizeEvent.cpp" />
+    <ClCompile Include="Source\Framework\Events\UpdateEvent.cpp" />
+    <ClCompile Include="Source\Framework\GameDev2D.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\AnimatedSprite.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Camera.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Color.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Font.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Label.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Polygon.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\RenderTarget.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Shader.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Sprite.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\SpriteAtlas.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\SpriteBatch.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Texture.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\VertexData.cpp" />
+    <ClCompile Include="Source\Framework\Input\GamePad.cpp" />
+    <ClCompile Include="Source\Framework\Input\Keyboard.cpp" />
+    <ClCompile Include="Source\Framework\Input\Mouse.cpp" />
+    <ClCompile Include="Source\Framework\IO\File.cpp" />
+    <ClCompile Include="Source\Framework\Math\Math.cpp" />
+    <ClCompile Include="Source\Framework\Math\Matrix.cpp" />
+    <ClCompile Include="Source\Framework\Math\Rotation.cpp" />
+    <ClCompile Include="Source\Framework\Math\Vector2.cpp" />
+    <ClCompile Include="Source\Framework\Services\DebugUI\DebugUI.cpp" />
+    <ClCompile Include="Source\Framework\Services\Graphics\Graphics.cpp" />
+    <ClCompile Include="Source\Framework\Services\InputManager\InputManager.cpp" />
+    <ClCompile Include="Source\Framework\Services\ResourceManager\ResourceManager.cpp" />
+    <ClCompile Include="Source\Framework\Services\Services.cpp" />
+    <ClCompile Include="Source\Framework\Utils\Png\Png.cpp" />
+    <ClCompile Include="Source\Framework\Utils\Text\Text.cpp" />
+    <ClCompile Include="Source\Framework\Utils\TrueType\TrueType.cpp" />
+    <ClCompile Include="Source\Framework\Windows\Application.cpp" />
+    <ClCompile Include="Source\Framework\Windows\GameLoop.cpp" />
+    <ClCompile Include="Source\Framework\Windows\GameWindow.cpp" />
+    <ClCompile Include="Source\Framework\Windows\OpenGL\OpenGLExtensions.cpp" />
+    <ClCompile Include="Source\Framework\Windows\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\Libraries\jsoncpp\json_reader.cpp" />
+    <ClCompile Include="Source\Libraries\jsoncpp\json_value.cpp" />
+    <ClCompile Include="Source\Libraries\jsoncpp\json_writer.cpp" />
+    <ClCompile Include="Source\Libraries\lodepng\lodepng.cpp" />
+    <ClCompile Include="Source\Segment.cpp" />
+    <ClCompile Include="Source\Timer.cpp" />
+    <ClCompile Include="Source\WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\passThrough-debug.fsh" />
+    <None Include="Assets\Shaders\passThrough-debug.gsh" />
+    <None Include="Assets\Shaders\passThrough-debug.vsh" />
+    <None Include="Assets\Shaders\passThrough-spriteBatch.fsh" />
+    <None Include="Assets\Shaders\passThrough-spriteBatch.vsh" />
+    <None Include="Assets\Shaders\passThrough-texure.fsh" />
+    <None Include="Assets\Shaders\passThrough-texure.vsh" />
+    <None Include="Assets\Shaders\passThrough.fsh" />
+    <None Include="Assets\Shaders\passThrough.vsh" />
+    <None Include="Source\Libraries\jsoncpp\json_internalarray.inl" />
+    <None Include="Source\Libraries\jsoncpp\json_internalmap.inl" />
+    <None Include="Source\Libraries\jsoncpp\json_valueiterator.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\Framework\Windows\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\Framework\Windows\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Source\Framework\Windows\DeclareDPIAware.manifest" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B4F3AE6-46CD-46D8-BB74-330F3B13576B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameDev2D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(USERPROFILE)\Desktop\Builds\$(TargetName)\$(Configuration)\</OutDir>
+    <IntDir>$(USERPROFILE)\Desktop\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+    <IncludePath>$(MSBuildProjectDirectory)\Source\Framework;$(MSBuildProjectDirectory)\Source\Libraries\fmod\include;$(MSBuildProjectDirectory)\Source\Libraries\lodepng\;$(MSBuildProjectDirectory)\Source\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\config\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\services\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\Source\Libraries\freetype\lib\windows\;$(MSBuildProjectDirectory)\Source\Libraries\fmod\lib\windows\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(MSBuildProjectDirectory)\Source\Libraries\lodepng\;$(MSBuildProjectDirectory)\Source\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\Source\Libraries\fmod\include\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\config\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\services\;$(MSBuildProjectDirectory)\Source\Framework\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\Source\Libraries\freetype\lib\windows\;$(MSBuildProjectDirectory)\Source\Libraries\fmod\lib\windows\;$(LibraryPath)</LibraryPath>
+    <OutDir>$(USERPROFILE)\Desktop\Builds\$(TargetName)\$(Configuration)\</OutDir>
+    <IntDir>$(USERPROFILE)\Desktop\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_MSC_PLATFORM_TOOLSET_$(PlatformToolset);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fmodex_vc.lib;freetypeWin32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:MSVCRT %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)\Source\Libraries\fmod\lib\windows\fmodex.dll" "$(OutDir)"</Command>
+      <Message>Copying fmodex.dll to output directory</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /y /s /i "$(ProjectDir)\Assets" "$(OutDir)\Assets"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copying assets to output directory</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_MSC_PLATFORM_TOOLSET_$(PlatformToolset);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>fmodex_vc.lib;freetypeWin32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)\Source\Libraries\fmod\lib\windows\fmodex.dll" "$(OutDir)"</Command>
+      <Message>Copying fmodex.dll to output directory</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /y /s /i "$(ProjectDir)\Assets" "$(OutDir)\Assets"</Command>
+      <Message>Copying assets to output directory</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
