@@ -291,6 +291,7 @@
     <ProjectGuid>{5B4F3AE6-46CD-46D8-BB74-330F3B13576B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>GameDev2D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -318,8 +319,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(USERPROFILE)\Desktop\Builds\$(TargetName)\$(Configuration)\</OutDir>
-    <IntDir>$(USERPROFILE)\Desktop\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\Builds\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Builds\$(Configuration)\</IntDir>
     <IncludePath>$(MSBuildProjectDirectory)\Source\Framework;$(MSBuildProjectDirectory)\Source\Libraries\fmod\include;$(MSBuildProjectDirectory)\Source\Libraries\lodepng\;$(MSBuildProjectDirectory)\Source\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\config\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\services\;$(IncludePath)</IncludePath>
     <LibraryPath>$(MSBuildProjectDirectory)\Source\Libraries\freetype\lib\windows\;$(MSBuildProjectDirectory)\Source\Libraries\fmod\lib\windows\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -327,8 +328,8 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(MSBuildProjectDirectory)\Source\Libraries\lodepng\;$(MSBuildProjectDirectory)\Source\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\Source\Libraries\fmod\include\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\config\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\;$(MSBuildProjectDirectory)\Source\Libraries\freetype\include\freetype2\internal\services\;$(MSBuildProjectDirectory)\Source\Framework\;$(IncludePath)</IncludePath>
     <LibraryPath>$(MSBuildProjectDirectory)\Source\Libraries\freetype\lib\windows\;$(MSBuildProjectDirectory)\Source\Libraries\fmod\lib\windows\;$(LibraryPath)</LibraryPath>
-    <OutDir>$(USERPROFILE)\Desktop\Builds\$(TargetName)\$(Configuration)\</OutDir>
-    <IntDir>$(USERPROFILE)\Desktop\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\Builds\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Builds\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
